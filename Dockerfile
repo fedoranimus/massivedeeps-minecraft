@@ -46,7 +46,7 @@ RUN chown -R minecraft:minecraft /minecraft
 EXPOSE 25565
 
 # /data contains static files and database
-VOLUME ["/minecraft/world", "/minecraft/backups", "/minecraft/ops.json", "/minecraft/whitelist.json", "/minecraft/server.properties"]
+VOLUME ["/minecraft/world", "/minecraft/backups"]
 
 # /start runs the server
 ENTRYPOINT ["/minecraft/start.sh"]
